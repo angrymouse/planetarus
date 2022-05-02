@@ -1,0 +1,29 @@
+{
+  "name": "planetarus",
+  "version": "0.0.1",
+  "description": "Smart contracts for cosmos and cosmos related chains. Cosmwasm-less.",
+  "main": "index.js",
+  "repository": "https://github.com/anothersoft/planetarus",
+  "author": "Another Software",
+  "license": "CC BY",
+  "private": false,
+  "scripts": {
+    "build": "./dev_utils/build.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.38",
+    "jest": "^28.0.2"
+  },
+  "dependencies": {
+    "@cosmjs/crypto": "^0.28.4",
+    "@cosmjs/launchpad": "^0.27.1",
+    "@cosmjs/proto-signing": "^0.28.4",
+    "@cosmjs/stargate": "^0.28.4",
+    "@cosmjs/tendermint-rpc": "^0.28.4",
+    "buffer": "^6.0.3",
+    "cross-fetch": "^3.1.5",
+    "vm-browserify": "^1.1.2",
+    "vm2": "^3.9.9"
+  }
+}

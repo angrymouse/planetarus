@@ -15,7 +15,7 @@ All interactions to contracts should be in this format "pl:<action number>:<acti
 There's 4 action numbers:
 
 1. Set contract source. As action body you should use link to contract source code, base64 encoded. This transaction should be sent from contract address to same contract address.
-2. Set state variable (Avoiding contract source). As action body you should provide key and value in base64 ecoded variant (<base64 key>:<base64 value>). This transaction should be sent from contract address to same contract address.
+2. Set state variable (Avoiding contract source). As action body you should provide key and value in base64 encoded variant (\<base64 key>:<base64 value>). This transaction should be sent from contract address to same contract address.
 3. Set contract metadata variable. You can get metadata variable from contract source, but not set. The only way to set metadata variable is to send this transaction. As action body you should provide key and value in base64 ecoded variant (<base64 key>:<base64 value>). This transaction should be sent from contract address to same contract address.
 4. Interact with contract (call contract source). As action body you should provide list of arguments to interact with `run()` function, splitted by ":" (without quotes), and encoded in base64 format. These inputs will be decoded to `Buffer` and you will need to convert it to convinient format directly in code.
 
